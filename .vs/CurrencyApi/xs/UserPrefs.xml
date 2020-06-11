@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{AA897EF6-87D0-47C3-92A8-C4628E0AF4D4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CurrencyApi/Models/CurrencyPairNameValue.cs">
+    <Files>
+      <File FileName="CurrencyApi/Workers/CurrencyWorkerService.cs" Line="54" Column="22" />
+      <File FileName="CurrencyApi/Program.cs" />
+      <File FileName="CurrencyApi/Controllers/CurrencyController.cs" />
+      <File FileName="CurrencyApi/Models/CurrencyPairNameValue.cs" Line="82" Column="2" />
+      <File FileName="CurrencyApi/Models/CurrencyValue.cs" />
+      <File FileName="CurrencyApi/Models/CurrencyNameAndCode.cs" />
+      <File FileName="CurrencyApi/Utilities/Data.cs" />
+      <File FileName="CurrencyApi/Models/CountrySpecificGoldUnit.cs" />
+      <File FileName="CurrencyApi/Utilities/LinkedListWithInit.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CurrencyApi" expanded="True">
+            <Node name="CurrencyApi" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="CurrencyPairNameValue.cs" selected="True" />
+              </Node>
+              <Node name="Utilities" expanded="True" />
+              <Node name="Workers" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CurrencyApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
