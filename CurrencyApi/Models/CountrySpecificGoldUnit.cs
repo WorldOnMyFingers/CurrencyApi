@@ -7,6 +7,7 @@ namespace CurrencyApi.Models
     public class CountrySpecificGoldUnit
     {
         public string Name { get; set; }
+        public string Code { get; set; }
         public string LocalCurrencyCode { get; set; }
         public string LocalCurrencySymbol { get; set; }
         public int Order { get; set; }

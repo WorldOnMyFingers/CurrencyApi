@@ -144,6 +144,7 @@ namespace CurrencyApi.Workers
                     _cache.Set("Currencies", currencyPairs);
                     if (_isFirstRun) GetOpeningPrice();
                     await Task.Delay(5000, stoppingToken);
+                    MakeACallToToTheSite();
 
                 }
                 catch (Exception ex)
@@ -297,6 +298,22 @@ namespace CurrencyApi.Workers
                 fx.Values.Remove(fx.Values.First.Next);
             }
                 return fx;
+        }
+
+        private void MakeACallToToTheSite()
+        {
+            var currentTime = DateTime.Now;
+            if((currentTime.Minute == 0 || currentTime.Minute == 15 || currentTime.Minute == 30 || currentTime.Minute == 45) && currentTime.Second > 50) {
+                var client = new RestClient("http://goldandcurrencyrates.com/");
+                client.Timeout = -1;
+                var request = new RestRequest(Method.GET);
+                request.AddHeader("Upgrade-Insecure-Requests", "1");
+                client.UserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36";
+                request.AddHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9");
+                IRestResponse response = client.Execute(request);
+                Console.WriteLine("site call made at " + currentTime );
+            }
+            
         }
 
     }

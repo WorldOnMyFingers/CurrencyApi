@@ -1,6 +1,5 @@
 /Users/emrebabayigit/Projects/CurrencyApi/CurrencyApi/bin/Release/netcoreapp3.1/appsettings.Development.json
 /Users/emrebabayigit/Projects/CurrencyApi/CurrencyApi/bin/Release/netcoreapp3.1/appsettings.json
-/Users/emrebabayigit/Projects/CurrencyApi/CurrencyApi/bin/Release/netcoreapp3.1/Properties/launchSettings.json
 /Users/emrebabayigit/Projects/CurrencyApi/CurrencyApi/bin/Release/netcoreapp3.1/CurrencyApi.deps.json
 /Users/emrebabayigit/Projects/CurrencyApi/CurrencyApi/bin/Release/netcoreapp3.1/CurrencyApi.runtimeconfig.json
 /Users/emrebabayigit/Projects/CurrencyApi/CurrencyApi/bin/Release/netcoreapp3.1/CurrencyApi.runtimeconfig.dev.json
@@ -116,3 +115,4 @@
 /Users/emrebabayigit/Projects/CurrencyApi/CurrencyApi/obj/Release/netcoreapp3.1/CurrencyApi.pdb
 /Users/emrebabayigit/Projects/CurrencyApi/CurrencyApi/obj/Release/netcoreapp3.1/CurrencyApi.genruntimeconfig.cache
 /Users/emrebabayigit/Projects/CurrencyApi/CurrencyApi/obj/Release/netcoreapp3.1/CurrencyApi.csprojAssemblyReference.cache
+/Users/emrebabayigit/Projects/CurrencyApi/CurrencyApi/obj/Release/netcoreapp3.1/scopedcss/bundle/CurrencyApi.styles.css

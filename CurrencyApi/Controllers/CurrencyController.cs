@@ -26,7 +26,7 @@ namespace CurrencyApi.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<CurrencyPairNameValue> Get(string localCurrencySymbol)
+        public CurrencyPairsWrapper Get(string localCurrencySymbol)
         {
             var watch = new Stopwatch();
             watch.Start();
@@ -36,7 +36,7 @@ namespace CurrencyApi.Controllers
             var data = _cache.Get<Dictionary<string, CurrencyPairNameValue>>("Currencies");
             data.TryGetValue("XAU/USD", out ounceFx);
             data.TryGetValue(usdLocalFxCode, out localFx);
-            var symbol = Data.GetCurrencySymbolByCode(localCurrencySymbol);
+            //var symbol = Data.GetCurrencySymbolByCode(localCurrencySymbol);
             var forex = data.Where(x => x.Key.ToLower().Contains("/" + localCurrencySymbol.ToLower()) ||
             x.Key.ToLower().Contains("xau/usd")).Take(30).Select(x => new CurrencyPairNameValue
             {
@@ -44,14 +44,15 @@ namespace CurrencyApi.Controllers
                 Name = Data.currencyNameAndCodes[new string(x.Key.Take(3).ToArray())].Name,
                 Values = x.Value.Values,
                 Order = Data.currencyNameAndCodes[new string(x.Key.Take(3).ToArray())].Order,
-                LocalCurrencySymbol = symbol
+                //LocalCurrencySymbol = symbol
             }).ToList();
             if (ounceFx.Values.Last.Previous == null || localFx.Values.Last.Previous == null) System.Threading.Thread.Sleep(10000);
             var customGolds = Data.CountrySpecificGoldUnits.Where(x => x.LocalCurrencyCode.ToLower() == localCurrencySymbol.ToLower()).Select(x => new CurrencyPairNameValue
             {
-                Code = x.Name,
+                Name = x.Name,
+                Code = x.Code,
                 Order = 5,
-                LocalCurrencySymbol = symbol,
+                //LocalCurrencySymbol = symbol,
                 Values = new LinkedListWithInit<CurrencyValue> {
                     x.CalculatePrice(ounceFx.Values.First.Value.Value, localFx.Values.First.Value.Value),
                     x.CalculatePrice(ounceFx.Values.Last.Previous.Value.Value, localFx.Values.Last.Previous.Value.Value),
@@ -62,7 +63,12 @@ namespace CurrencyApi.Controllers
             watch.Stop();
             Console.Out.WriteLine(watch.ElapsedMilliseconds);
             forex.FirstOrDefault(x => x.Code == "XAU").LocalCurrencySymbol = "$";
-            return forex;
+            var result = new CurrencyPairsWrapper
+            {
+                LocalCountry = Data.currencyNameAndCodes[localCurrencySymbol.ToUpper()].Country,
+                Currencies = forex,
+            };
+            return result;
         }
     }
 }

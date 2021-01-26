@@ -24,7 +24,7 @@ namespace CurrencyApi.Utilities
             //{ "ALL", new CurrencyNameAndCode { Code = "ALL", Name = "Abanian Lek", Order = 90} },
             //{ "DZD", new CurrencyNameAndCode { Code = "DZD", Name = "Algerian Dinar", Order = 91} },
             //{ "XCD", new CurrencyNameAndCode { Code = "XCD", Name = "East Caribbean Dollar", Order = 101} },
-            //{ "ARS", new CurrencyNameAndCode { Code = "ARS", Name = "Peso", Order = 99} },
+            { "ARS", new CurrencyNameAndCode { Code = "ARS", Name = "Peso", Country = "Argentina", Order = 9} },
             //{ "AMD", new CurrencyNameAndCode { Code = "AMD", Name = "Dram", Order = 99} },
             //{ "ANG", new CurrencyNameAndCode { Code = "ANG", Name = "Netherlands Antilles Guilder", Order = 99} },
             //{ "AZN", new CurrencyNameAndCode { Code = "AZN", Name = "Manat", Order = 99 } },
@@ -36,10 +36,10 @@ namespace CurrencyApi.Utilities
             //{ "BZD", new CurrencyNameAndCode { Code = "BZD", Name = "Belizean Dollar", Order = 99 } },
             //{ "XOF", new CurrencyNameAndCode { Code = "XOF", Name = "CFA Franc BCEAO", Order = 99} },
             //{ "BMD", new CurrencyNameAndCode { Code = "BMD", Name = "Bermudian Dollar", Order = 99} },
-            //{ "BOB", new CurrencyNameAndCode { Code = "BOB", Name = "Boliviano", Order = 99} },
+            { "BOB", new CurrencyNameAndCode { Code = "BOB", Name = "Boliviano", Country = "Bolivia", Order = 39} },
             //{ "BWP", new CurrencyNameAndCode { Code = "BWP", Name = "Pula", Order = 99} },
             //{ "NOK", new CurrencyNameAndCode { Code = "NOK", Name = "Norwegian Krone", Order = 99} },
-            //{ "BRL", new CurrencyNameAndCode { Code = "BRL", Name = "Brazil", Order = 99} },
+            { "BRL", new CurrencyNameAndCode { Code = "BRL", Name = "Brazil", Order = 26} },
             //{ "BND", new CurrencyNameAndCode { Code = "BND", Name = "Bruneian Dollar", Order = 99} },
             //{ "BGN", new CurrencyNameAndCode { Code = "BGN", Name = "Lev", Order = 99} },
             //{ "BIF", new CurrencyNameAndCode { Code = "BIF", Name = "Burundi Franc", Order = 99} },
@@ -47,8 +47,8 @@ namespace CurrencyApi.Utilities
             //{ "XAF", new CurrencyNameAndCode { Code = "XAF", Name = "CFA Franc BEAC", Order = 99} },
             //{ "CVE", new CurrencyNameAndCode { Code = "CVE", Name = "Escudo", Order = 99} },
             //{ "KYD", new CurrencyNameAndCode { Code = "KYD", Name = "Caymanian Dollar", Order = 99} },
-            //{ "CLP", new CurrencyNameAndCode { Code = "CLP", Name = "Chilean Peso", Order = 99} },
-            //{ "COP", new CurrencyNameAndCode { Code = "COP", Name = "Peso", Order = 99} },
+            { "CLP", new CurrencyNameAndCode { Code = "CLP", Name = "Chilean Peso", Country = "Chile", Order =  10} },
+            { "COP", new CurrencyNameAndCode { Code = "COP", Name = "Peso", Country = "Colombia", Order = 11} },
             //{ "KMF", new CurrencyNameAndCode { Code = "KMF", Name = "Comoran Franc", Order = 99} },
             //{ "CDF", new CurrencyNameAndCode { Code = "CDF", Name = "Congolese Frank", Order = 99} },
             //{ "CRC", new CurrencyNameAndCode { Code = "CRC", Name = "Costa Rican Colon", Order = 99} },
@@ -107,7 +107,7 @@ namespace CurrencyApi.Utilities
             //{ "MTL", new CurrencyNameAndCode { Code = "MTL", Name = "Maltese Lira", Order = 99} },
             //{ "MRO", new CurrencyNameAndCode { Code = "MRO", Name = "Ouguiya", Order = 99} },
             //{ "MUR", new CurrencyNameAndCode { Code = "MUR", Name = "Mauritian Rupee", Order = 99} },
-            //{ "MXN", new CurrencyNameAndCode { Code = "MXN", Name = "Peso", Order = 99} },
+            { "MXN", new CurrencyNameAndCode { Code = "MXN", Name = "Peso", Country = "Mexico", Order = 22} },
             //{ "MDL", new CurrencyNameAndCode { Code = "MDL", Name = "Leu", Order = 99} },
             //{ "MNT", new CurrencyNameAndCode { Code = "MNT", Name = "Tugrik", Order = 99} },
             //{ "MAD", new CurrencyNameAndCode { Code = "MAD", Name = "Dirham", Order = 99} },
@@ -121,8 +121,8 @@ namespace CurrencyApi.Utilities
             //{ "OMR", new CurrencyNameAndCode { Code = "OMR", Name = "Sul Rial", Order = 99} },
             //{ "PAB", new CurrencyNameAndCode { Code = "PAB", Name = "Balboa", Order = 99} },
             //{ "PGK", new CurrencyNameAndCode { Code = "PGK", Name = "Kina", Order = 99} },
-            //{ "PYG", new CurrencyNameAndCode { Code = "PYG", Name = "Guarani", Order = 99} },
-            //{ "PEN", new CurrencyNameAndCode { Code = "PEN", Name = "Nuevo Sol", Order = 99} },
+            { "PYG", new CurrencyNameAndCode { Code = "PYG", Name = "Guarani", Country = "Paraguay", Order = 19} },
+            { "PEN", new CurrencyNameAndCode { Code = "PEN", Name = "Nuevo Sol", Country = "Peru", Order = 29} },
             //{ "PHP", new CurrencyNameAndCode { Code = "PHP", Name = "Peso", Order = 99} },
             //{ "PLN", new CurrencyNameAndCode { Code = "PLN", Name = "Zloty", Order = 99} },
             //{ "QAR", new CurrencyNameAndCode { Code = "QAR", Name = "Rial", Order = 99} },
@@ -137,7 +137,7 @@ namespace CurrencyApi.Utilities
             //{ "SKK", new CurrencyNameAndCode { Code = "SKK", Name = "Koruna", Order = 99} },
             //{ "SBD", new CurrencyNameAndCode { Code = "SBD", Name = "Solomon Islands Dollar", Order = 99} },
             //{ "SOS", new CurrencyNameAndCode { Code = "SOS", Name = "Shilling", Order = 99} },
-            //{ "ZAR", new CurrencyNameAndCode { Code = "ZAR", Name = "Rand", Order = 99} },
+            { "ZAR", new CurrencyNameAndCode { Code = "ZAR", Name = "Rand", Country = "South Africa",  Order = 13} },
             //{ "LKR", new CurrencyNameAndCode { Code = "LKR", Name = "Rupee", Order = 99} },
             //{ "SDG", new CurrencyNameAndCode { Code = "SDG", Name = "Dinar", Order = 99} },
             //{ "SRD", new CurrencyNameAndCode { Code = "SRD", Name = "Surinamese Guilder", Order = 99} },
@@ -151,12 +151,12 @@ namespace CurrencyApi.Utilities
             //{ "TOP", new CurrencyNameAndCode { Code = "TOP", Name = "PaÕanga", Order = 99} },
             //{ "TTD", new CurrencyNameAndCode { Code = "TTD", Name = "Trinidad and Tobago Dollar", Order = 99} },
             //{ "TND", new CurrencyNameAndCode { Code = "TND", Name = "Tunisian Dinar", Order = 99} },
-            { "TRY", new CurrencyNameAndCode { Code = "TRY", Name = "Lira", Country = "Turkey", Order = 6} },
+            { "TRY", new CurrencyNameAndCode { Code = "TRY", Name = "Lira", Country = "Turkey", Order = 14} },
             //{ "TMT", new CurrencyNameAndCode { Code = "TMT", Name = "Manat", Order = 99} },
             //{ "UGX", new CurrencyNameAndCode { Code = "UGX", Name = "Shilling", Order = 99} },
             //{ "UAH", new CurrencyNameAndCode { Code = "UAH", Name = "Hryvnia", Order = 99} },
             //{ "AED", new CurrencyNameAndCode { Code = "AED", Name = "Dirham", Order = 99} },
-            //{ "UYU", new CurrencyNameAndCode { Code = "UYU", Name = "Peso", Order = 99} },
+            { "UYU", new CurrencyNameAndCode { Code = "UYU", Name = "Peso", Country = "Uruguay", Order = 15} },
             //{ "UZS", new CurrencyNameAndCode { Code = "UZS", Name = "Som", Order = 99} },
             //{ "VUV", new CurrencyNameAndCode { Code = "VUV", Name = "Vatu", Order = 99} },
             //{ "VEF", new CurrencyNameAndCode { Code = "VEF", Name = "Bolivar", Order = 99} },
@@ -171,7 +171,7 @@ namespace CurrencyApi.Utilities
             var symbols = new Dictionary<string, string>()
             {
                 {"pkr", "₨" },
-                {"try", "₺" },
+                {"try", "₺" }
             };
 
             return symbols[localCurrencyCode];
@@ -182,6 +182,7 @@ namespace CurrencyApi.Utilities
             new CountrySpecificGoldUnit
             {
                Name = "24k 10 Gram Gold",
+               Code = "24k10Gr",
                LocalCurrencyCode = "PKR",
                Unit = 10,
                Order = 5,
@@ -191,6 +192,7 @@ namespace CurrencyApi.Utilities
             new CountrySpecificGoldUnit
             {
                Name = "22k 10 Gram Gold",
+               Code = "22k10Gr",
                LocalCurrencyCode = "PKR",
                Unit = 10 * 0.91666,
                Order = 6,
@@ -200,6 +202,7 @@ namespace CurrencyApi.Utilities
             new CountrySpecificGoldUnit
             {
                Name = "24k Per Tola",
+               Code = "24kTola",
                LocalCurrencyCode = "PKR",
                Unit = 11.6638038,
                Order = 7,
@@ -209,6 +212,7 @@ namespace CurrencyApi.Utilities
             new CountrySpecificGoldUnit
             {
                Name = "22k Per Tola",
+               Code = "22kTola",
                LocalCurrencyCode = "PKR",
                Unit = 11.6638038 * 0.91666,
                Order = 8,
@@ -218,6 +222,7 @@ namespace CurrencyApi.Utilities
             new CountrySpecificGoldUnit
             {
                Name = "Gram Altın",
+               Code = "24kGr",
                LocalCurrencyCode = "TRY",
                Unit = 1,
                Order = 5,
@@ -227,6 +232,7 @@ namespace CurrencyApi.Utilities
             new CountrySpecificGoldUnit
             {
                Name = "Ceyrek",
+               Code = "Ceyrek",
                LocalCurrencyCode = "TRY",
                Unit = 0.91666 * 1.754,
                Order = 6,
